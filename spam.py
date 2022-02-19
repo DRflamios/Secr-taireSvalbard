@@ -31,6 +31,7 @@ async def on_ready():
     prin("on ready")
     await client.accept_invite(invitelink)
 '''
+
 class MyClient(discord.Client):
     async def on_ready(self):
         print("Logged on as: ", self.user)
@@ -69,7 +70,7 @@ class MyClient(discord.Client):
 
         if message.content.startswith("+assist"):
             print("Envoie de la demande")
-                        for x in range(0, occurence):
+            for x in range(0, occurence):
                 time.sleep(delay)
                 for msg in list3:
                     await message.channel.send(msg)
