@@ -5,7 +5,7 @@ import random
 import time
 from discord.utils import get
 
-token = ("OTM0NTQ3NzI2Mzc5NjYzNDcx.YexrZQ.PE7nMmvTneRyGxTwYgHlmjr9cgY")
+token = ("YOUR BOT TOKEN")
 delay = 0.1
 list1 = ["Personne à spammer"]
 list2 = ["Salut!"]
@@ -14,7 +14,7 @@ list4 = ["Je suis le secrétaire du Svalbard, je m'occupe d'acceuillir les nouve
 occurence = 1
 
 
-
+#old code
 '''
 # invitelink = str(input("dqq9vV7A"))
 
@@ -75,9 +75,9 @@ class MyClient(discord.Client):
                 for msg in list3:
                     await message.channel.send(msg)
                     time.sleep(delay)
-                    channel = client.get_channel(938405541548539935)
+                    channel = client.get_channel(#CHANNEL_ID)
                     mention = message.author.mention
-                    await channel.send(f"<@&938404968464023552> : {mention} a besoin d'aide.")
+                    await channel.send(f"<@&#ROLE_ID> : {mention} a besoin d'aide.")
             print("Done")
 
         if message.content.startswith("+help"):
